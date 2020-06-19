@@ -14,14 +14,12 @@
 		border-radius: 50%;
 		background: #212121;
 	    animation: spin .1s linear infinite;
-	    zoom: 3;
-	    -moz-transform: scale(300%);
+	    transform: scale(3);
 	}
 
 	@keyframes spin {
 		100% {
-			transform:rotate(360deg);
-			-moz-transform: scale(300%) rotate(360deg);
+			transform: scale(3) rotate(360deg);
 		}
 	}
 
@@ -42,8 +40,7 @@
 		position: absolute;
 		border-radius: 100%;
 		z-index: 2;
-		transform: translateX(50%) translateY(50%);
-		-moz-transform: translateX(50%) translateY(50%) scale(300%);
+		transform: translateX(50%) translateY(50%) scale(3);
 		box-shadow: 0 10px 30px #2e2e2e, inset 0 10px 30px #2e2e2e;
 	}
 
