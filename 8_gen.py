@@ -3,7 +3,7 @@
 
 from itertools import *
 
-width, height = 300, 300
+width, height = 150, 150
 
 phrases = \
 r"""It is certain
