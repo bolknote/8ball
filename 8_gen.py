@@ -3,7 +3,8 @@
 
 from itertools import *
 
-width, height = 150, 150
+R = 150
+r = R/2
 
 phrases = \
 r"""It is certain
@@ -28,7 +29,7 @@ Outlook not so good
 Very doubtful"""
 
 tags = zip(
-	(str(x)+","+str(y) for x in range(0, width) for y in range(0, height)),
+	(str(x)+","+str(y) for x in range(0, R+1) for y in range(0, R+1) if (x - r)**2 + (y - r)**2 <= (r+1)**2),
 	cycle(phrases.split("\n"))
 )
 
